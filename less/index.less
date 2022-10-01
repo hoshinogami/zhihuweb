@@ -1,0 +1,408 @@
+//out:../css/
+body {
+
+    font-size: 15px;
+    background-color: #f6f6f6;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?bgu2nq');
+    src: url('fonts/icomoon.eot?bgu2nq#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?bgu2nq') format('truetype'),
+        url('fonts/icomoon.woff?bgu2nq') format('woff'),
+        url('fonts/icomoon.svg?bgu2nq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+li {
+    list-style-type: none;
+    float: left;
+}
+
+.appHeader {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    min-width: 1200px;
+    width: 1200px;
+    overflow: hidden;
+    background: pink;
+    width: 52px;
+    border-bottom: 1px solid #333;
+}
+
+.title {
+    float: left;
+    display: block;
+    width: 64px;
+    height: 30px;
+    color: blue;
+    font-size: 25px;
+    padding-left: 18px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.banner {
+    float: left;
+    padding: 0px 15px;
+
+    li {
+        padding: 14px 15px;
+        color: #8590a6;
+        font-size: 15px;
+        line-height: 22px;
+
+        text-align: center;
+
+
+        :hover {
+            color: #444;
+        }
+
+
+    }
+
+    .current {
+        color: #121212;
+        font-weight: bold;
+    }
+}
+
+//搜索框
+.input {
+    float: left;
+    width: 300px;
+    height: 32px;
+    background-color: #f6f6f6;
+    padding-left: 16px;
+    border-radius: 999px;
+    margin-top: 10px;
+
+    i {
+
+        font-size: 15px;
+        color: #8590a6
+    }
+
+    .search {
+        margin-top: 8px;
+        line-height: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+        outline: none;
+        background-color: #f6f6f6;
+    }
+
+    button {
+        margin-top: 10px;
+        float: right;
+        margin-right: 20px;
+        border: none;
+
+    }
+
+
+}
+
+//提问按钮
+.question {
+    float: left;
+    color: #fff;
+    background-color: #056de8;
+    font-size: 14px;
+    border-radius: 999px;
+    margin-left: 12px;
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 5px 14px;
+}
+
+//用户消息
+.user {
+    float: left;
+    position: relative;
+    width: 270px;
+
+    //消息
+    .user-news {
+        float: left;
+        margin-top: 10px;
+        margin-left: 45px;
+
+        span {
+            cursor: pointer;
+            display: block;
+            color: #8590a6;
+            font-size: 12px;
+        }
+    }
+
+    //私信
+    .user-message {
+        margin-top: 10px;
+        padding-left: 15px;
+        float: left;
+
+        span {
+            cursor: pointer;
+            display: block;
+            color: #8590a6;
+            font-size: 12px;
+
+        }
+    }
+
+    //个人中心
+    .user-head {
+        cursor: pointer;
+        float: left;
+        position: absolute;
+        top: 8px;
+        right: 65px;
+    }
+}
+
+//内容区
+//tab栏
+.content {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.main {
+
+    width: 694px;
+    float: left;
+    border: 1px solid #aaa5a5;
+    height: 100%;
+
+    .main-tabs {
+        position: relative;
+        height: 60px;
+        border-bottom: 1px solid #aaa5a5;
+
+        li {
+            display: block;
+            margin: 20px 20px;
+            font-size: 15px;
+
+
+        }
+
+        .current1 {
+            color: #056de8;
+        }
+    }
+}
+
+.main-content {
+    float: left;
+
+    .page {
+
+        padding: 20px;
+        border-bottom: 1px solid #aaa5a5;
+
+        .page-title {
+            font-size: 16px;
+            color: #121212;
+            font-weight: bold;
+
+        }
+
+        .page-content {
+            line-height: 25px;
+            font-size: 14px;
+
+            button {
+                cursor: pointer;
+                border: none;
+                color: #056de8;
+
+            }
+
+            span {
+                color: #056de8;
+                cursor: pointer;
+                font-size: 15px;
+            }
+        }
+
+        .page-tabs {
+            position: relative;
+            height: 40px;
+            margin: 10px 20px;
+
+            div {
+                float: left;
+            }
+
+            button {
+                border: none;
+
+            }
+
+            .agree {
+                padding: 4px 12px;
+                background: rgba(5, 109, 232, .1);
+                //border: none;
+                color: #056de8;
+                font-size: 14px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .disagree {
+                margin-left: 2px;
+                background: rgba(5, 109, 232, .1);
+                color: #056de8;
+                font-size: 14px;
+                padding: 6px 12px;
+                border-radius: 3px;
+                cursor: pointer;
+
+            }
+
+            .comment {
+                margin-left: 24px;
+                font-size: 14px;
+                color: #8590a6;
+                cursor: pointer;
+
+            }
+
+            .share,
+            .store,
+            .love,
+            .more {
+                margin-left: 24px;
+                font-size: 14px;
+                color: #8590a6;
+                cursor: pointer;
+            }
+
+
+        }
+    }
+}
+
+.right-tab {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+
+    //background: pink;
+    overflow: hidden;
+
+    .creator {
+
+        width: 274px;
+        border: 1px solid #aaa5a5;
+
+        .hang1 {
+            height: 52px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .draft {
+                margin-left: 130px;
+                color: #8590a6;
+            }
+        }
+
+        .hang2 {
+            display: flex;
+            justify-content: space-around;
+
+            .but {
+                border: none;
+                width: 55px;
+
+                .item1 {
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    line-height: 30px;
+                    border-radius: 15px;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    background-color: yellow;
+                }
+
+                .item2 {
+                    margin-left: 5px;
+                    float: left;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .hang3 {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(133, 144, 166, 0.1);
+            margin: 10px;
+
+            .item3 {
+                .item31 {
+                    margin: 10px;
+                    font-size: 14px;
+                }
+
+                .item32 {
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: rgb(153, 153, 153);
+                }
+            }
+
+            .item2 {
+                margin: 10px;
+            }
+        }
+
+        .hang4 {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            width: 250px;
+            height: 40px;
+            border: 1px solid rgba(5, 109, 232, 0.5);
+            color: rgb(5, 109, 232);
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+}
