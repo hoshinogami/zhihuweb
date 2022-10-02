@@ -1,0 +1,132 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+/* 弹窗背景 */
+#modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  /* 默认隐藏 */
+  /* display: none; */
+  /* 固定定位 */
+  position: fixed;
+  /* 设置在顶层 */
+  z-index: 1000;
+  /* 设置位置 */
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* 弹窗内容 */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 10% auto;
+  border: 1px solid #888;
+  width: 536px;
+  height: 300px;
+  z-index: 1001;
+}
+.modal-content .modal-item1 {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #121212;
+  text-align: center;
+}
+.modal-content .modal-item2 {
+  padding: 0 38px;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8590a6;
+  text-align: center;
+}
+.modal-content .modal-item3 {
+  width: 220px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: 1px solid;
+  border-radius: 3px;
+  background-color: #056de8;
+}
+.modal-content .modal-item3:hover {
+  background-color: #0461cf;
+}
+.modal-content .modal-item4 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
+  padding: 0 16px;
+  margin-top: 28px;
+  color: #8590a6;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: 1px solid;
+  border-radius: 3px;
+}
+/* 关闭按钮 */
+.close {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 85%;
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+/* 设置关闭按钮的鼠标指针 */
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.user-tab {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  left: 970px;
+  width: 118px;
+  height: 124px;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+.user-tab:before {
+  content: '';
+  position: absolute;
+  left: 42px;
+  top: -18px;
+  width: 0;
+  height: 0;
+  border: 17px solid;
+  border-top-width: 0;
+}
+.user-tab:before {
+  bottom: 100px;
+  border-color: transparent transparent #fff transparent;
+}
+.user-tab .ut-item1,
+.user-tab .ut-item2,
+.user-tab .ut-item3,
+.user-tab .ut-item4 {
+  margin: 10px 0;
+  color: #8590a6;
+  padding: 0 20px;
+  font-size: 14px;
+}

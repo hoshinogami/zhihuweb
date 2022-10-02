@@ -20,6 +20,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    border-radius: 3px;
 }
 
 header {
@@ -314,18 +315,21 @@ li {
     }
 }
 
+//右边栏
 .right-tab {
     position: absolute;
     top: 0px;
     left: 700px;
 
-    //background: pink;
+    background: white;
     overflow: hidden;
 
+    //第一框
     .creator {
 
         width: 274px;
         border: 1px solid #aaa5a5;
+        padding: 16px 15px 10px;
 
         .hang1 {
             height: 52px;
@@ -405,4 +409,160 @@ li {
             text-align: center;
         }
     }
+
+    //第二框
+    .recommend {
+        margin-top: 10px;
+        width: 274px;
+        border: 1px solid #aaa5a5;
+        padding: 16px 15px 10px;
+
+        .re-item1 {
+            box-sizing: border-box;
+            margin: 0px 0px 23px;
+            min-width: 0px;
+            -webkit-box-align: center;
+            align-items: center;
+            color: rgb(68, 68, 68);
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .re-user {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: flex-start;
+
+            .re-word {
+                width: 250px;
+                display: flex;
+                justify-content: space-between;
+                ;
+
+                .re-item2 {
+                    width: 100px;
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+
+                .re-item3 {
+                    width: 100px;
+                    box-sizing: border-box;
+                    margin-left: 5px;
+                    min-width: 0px;
+                    font-size: 12px;
+                    color: rgb(153, 153, 153);
+                    display: -webkit-box;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+
+                }
+
+                .re-item4 {
+                    font-size: 12px;
+                    color: #056de8;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .re-bottom {
+            text-align: center;
+            font-size: 10px;
+            padding-top: 2px;
+            color: rgb(133, 144, 166);
+        }
+    }
+
+    //第三框
+    .labs {
+        margin-top: 10px;
+        width: 306px;
+        border: 1px solid #aaa5a5;
+
+        .labs-item1 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li {
+
+                margin: 20px;
+                width: 60px;
+
+
+            }
+
+            span:nth-child(1) {
+                display: block;
+                font-size: 20px;
+
+            }
+
+            span:nth-child(2) {
+                display: block;
+                color: #8590a6;
+                font-size: 15px;
+            }
+
+            li:nth-child(1) {
+                color: rgb(255, 207, 0);
+            }
+
+            li:nth-child(2) {
+                color: rgb(67, 212, 128);
+            }
+
+            li:nth-child(3) {
+                color: rgb(0, 102, 255);
+            }
+
+            li:nth-child(4) {
+                color: rgb(15, 136, 235);
+            }
+
+            li:nth-child(5) {
+                color: rgb(84, 120, 240);
+            }
+
+            li:nth-child(6) {
+                color: rgb(88, 104, 209);
+            }
+        }
+    }
+
+    //第四框
+    .center {
+        margin-top: 10px;
+        width: 274px;
+        border: 1px solid #aaa5a5;
+        padding: 16px 15px 10px;
+        height: 320px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 270px;
+                display: block;
+                color: #8590a6;
+                margin: 10px 0px;
+            }
+        }
+    }
+
+    //第五框
+    .explain {
+        margin-top: 10px;
+        width: 274px;
+
+        padding: 16px 15px 10px;
+        font-size: 13px;
+        line-height: 2;
+        color: #8590a6;
+    }
+
 }

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.current {
+  font-weight: 700;
+  color: #000;
+  border-bottom: 3px solid #0461cf;
+}
+body {
+  background-image: url("../imges/li.png");
+  background-color: #b8e5f8;
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+}
+.main .title {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main .title img {
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main .sign {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 733px;
+  height: 506px;
+  background-color: white;
+}
+.main .sign .scan {
+  padding-top: 98px;
+  width: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .sign .scan .scan-item1 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+}
+.main .sign .scan .scan-item2 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: #444444;
+  font-size: 14px;
+  line-height: 20px;
+}
+.main .sign .scan .scan-item3 {
+  padding: 8px;
+  border: 1px solid #ebebeb;
+}
+.main .sign .scan .scan-item4 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-top: 24px;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.main .sign .write {
+  padding-left: 15px;
+  width: 401px;
+  border-left: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+}
+.main .sign .write .wr-item1 {
+  display: flex;
+  text-align: left;
+  margin-top: 16px;
+}
+.main .sign .write .wr-item1 .wr-item11 {
+  font-size: 16px;
+  line-height: 46px;
+  height: 49px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.main .sign .write .wr-item2 {
+  margin-top: 24px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+.main .sign .write .wr-item2 span {
+  color: #8590a6;
+  font-size: 14px;
+}
+.main .sign .write .wr-item2 input {
+  margin-left: 10px;
+  color: #8590a6;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+.main .sign .write .wr-item3 {
+  display: flex;
+  margin-top: 24px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.main .sign .write .wr-item3 input {
+  margin-left: 10px;
+  color: #8590a6;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+.main .sign .write .wr-item3 span {
+  margin-right: 15px;
+  font-size: 14px;
+  color: #056de8;
+  cursor: pointer;
+}
+.main .sign .write .wr-item4 {
+  width: 90%;
+  margin-top: 30px;
+  height: 36px;
+  text-align: center;
+  color: white;
+  background-color: #056de8;
+  cursor: pointer;
+  line-height: 36px;
+}
+.main .sign .write .wr-item4:hover {
+  background-color: #0461cf;
+}
+.main .sign .write .wr-item5 {
+  box-sizing: border-box;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #999999;
+  font-size: 12px;
+  width: 350px;
+  overflow: hidden;
+  line-height: 17px;
+  white-space: nowrap;
+  text-align: center;
+}
+.main .sign .write .wr-item6 {
+  margin: 12px 98px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .sign .write .wr-item6 span {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: #f6f6f6;
+  border-radius: 18px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 36px;
+}
+.main .sign .write .wr-item6 span:nth-child(1) {
+  color: blue;
+}
+.main .sign .write .wr-item6 span:nth-child(3) {
+  color: red;
+}
+.main .sign .write .wr-item7 {
+  font-size: 12px;
+  line-height: 19px;
+  padding: 12px 24px 30px;
+  color: #999999;
+}
