@@ -2,14 +2,6 @@ body {
   font-size: 15px;
   background-color: #f6f6f6;
 }
-@font-face {
-  font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?bgu2nq');
-  src: url('fonts/icomoon.eot?bgu2nq#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?bgu2nq') format('truetype'), url('fonts/icomoon.woff?bgu2nq') format('woff'), url('fonts/icomoon.svg?bgu2nq#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 * {
   margin: 0;
   padding: 0;
@@ -28,15 +20,15 @@ li {
   float: left;
 }
 .appHeader {
-  position: absolute;
+  background-color: white;
+  position: fixed;
   top: 0;
   z-index: 100;
+  width: 100%;
   min-width: 1200px;
-  width: 1200px;
   overflow: hidden;
-  background: pink;
-  width: 52px;
-  border-bottom: 1px solid #333;
+  height: 52px;
+  border-bottom: 1px solid #e6e6e6;
 }
 .title {
   float: left;
@@ -146,6 +138,7 @@ li {
 .content {
   position: absolute;
   top: 50px;
+  left: 5%;
   background-color: white;
   margin-top: 10px;
   margin-left: 40px;

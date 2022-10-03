@@ -14,6 +14,10 @@ body {
   height: 100%;
   min-height: 800px;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 .main .title {
   position: relative;
   margin-left: auto;
@@ -36,7 +40,7 @@ body {
   background-color: white;
 }
 .main .sign .scan {
-  padding-top: 98px;
+  padding-top: 20px;
   width: 332px;
   display: flex;
   flex-direction: column;
@@ -96,41 +100,51 @@ body {
   margin-right: 24px;
   cursor: pointer;
 }
-.main .sign .write .wr-item2 {
+.main .sign .write .wr-item21,
+.main .sign .write .wr-item22 {
   margin-top: 24px;
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 10px;
 }
-.main .sign .write .wr-item2 span {
+.main .sign .write .wr-item21 span,
+.main .sign .write .wr-item22 span {
   color: #8590a6;
   font-size: 14px;
 }
-.main .sign .write .wr-item2 input {
+.main .sign .write .wr-item21 input,
+.main .sign .write .wr-item22 input {
   margin-left: 10px;
   color: #8590a6;
   font-size: 14px;
   border: none;
   outline: none;
 }
-.main .sign .write .wr-item3 {
+.main .sign .write .wr-item31,
+.main .sign .write .wr-item32 {
   display: flex;
   margin-top: 24px;
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 10px;
   justify-content: space-between;
 }
-.main .sign .write .wr-item3 input {
+.main .sign .write .wr-item31 input,
+.main .sign .write .wr-item32 input {
   margin-left: 10px;
   color: #8590a6;
   font-size: 14px;
   border: none;
   outline: none;
 }
-.main .sign .write .wr-item3 span {
+.main .sign .write .wr-item31 span,
+.main .sign .write .wr-item32 span {
   margin-right: 15px;
   font-size: 14px;
   color: #056de8;
   cursor: pointer;
+}
+.main .sign .write .wr-item22,
+.main .sign .write .wr-item32 {
+  display: none;
 }
 .main .sign .write .wr-item4 {
   width: 90%;
