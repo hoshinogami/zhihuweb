@@ -15,6 +15,7 @@ body {
   background-color: #f6f6f6;
 }
 .wr-header {
+  z-index: 999;
   position: fixed;
   top: 0;
   height: 51px;
@@ -75,4 +76,8 @@ body {
   margin-right: 100px;
   border: 1px dashed #e6e6e6;
   cursor: pointer;
+}
+.content .wr-load img {
+  width: 200px;
+  height: 200px;
 }

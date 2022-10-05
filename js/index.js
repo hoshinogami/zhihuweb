@@ -13,8 +13,11 @@ window.onload = function () {
     var tab2 = document.querySelector("body > header");
     var tab1 = document.querySelector("#root > header");
     var content_tab = document.querySelector("#root > div > div.main > div.main-tabs");
-    console.log(tab1);
-    console.log(tab2);
+    //点赞
+    var agree = document.querySelectorAll("#root > div > div.main > div.main-content > div > div.page-tabs > div:nth-child(1) > button");
+    console.log(agree);
+    //点踩
+    var disagree = document.querySelectorAll("#root > div > div.main > div.main-content > div > div.page-tabs > div:nth-child(2) > button");
     //收藏
     for (var i = 0; i < store.length; i++) {
         store[i].addEventListener("click", function () {
@@ -40,9 +43,9 @@ window.onload = function () {
     })
     //导航栏
     window.addEventListener("scroll", function () {
-        console.log("1");
+        // console.log("1");
         var scrolltop = document.body.scrollTop || window.pageYOffset;
-        console.log(scrolltop);
+
         var tab_height = 51;
 
         var contab_bottom = content_tab.offsetHeight + content_tab.offsetTop;
@@ -55,6 +58,35 @@ window.onload = function () {
             tab1.style.display = "block";
             tab2.style.display = "none";
         }
-        console.log(contab_bottom);
+
     })
+    //点赞
+    for (var i = 0; i < agree.length; i++) {
+        agree[i].addEventListener("click", function () {
+            var span = this.querySelectorAll("span");
+            console.log(span);
+            var string = span[1].innerText;
+            var number = string.replace(/[^0-9]/ig, "");
+            number++;
+            span[1].innerText = "赞同 " + number;
+            console.log(number);
+        })
+    }
+    //点踩
+    for (var i = 0; i < agree.length; i++) {
+        disagree[i].index = i;
+        disagree[i].addEventListener("click", function () {
+            var span = agree[this.index].querySelectorAll("span");
+            console.log(span);
+            var string = span[1].innerText;
+            var number = string.replace(/[^0-9]/ig, "");
+            if (number === 0) {
+                return;
+            }
+            number--;
+
+            span[1].innerText = "赞同 " + number;
+            console.log(number);
+        })
+    }
 }
