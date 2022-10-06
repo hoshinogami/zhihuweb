@@ -69,13 +69,34 @@ body {
   height: 368px;
 }
 .content .wr-load .load-item1 {
+  position: relative;
   text-align: center;
-  height: 80px;
+  line-height: 200px;
+  height: 200px;
+  width: 200px;
   margin-top: 30px;
   margin-left: 100px;
-  margin-right: 100px;
   border: 1px dashed #e6e6e6;
   cursor: pointer;
+  color: #8590a6;
+}
+.content .wr-load .load-item1 button {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  position: absolute;
+}
+.content .wr-load .load-item1 button:nth-child(2) {
+  top: 80%;
+  left: 30%;
+}
+.content .wr-load .load-item1 button:nth-child(3) {
+  top: 80%;
+  left: 50%;
+}
+.content .wr-load .load-item1:hover button {
+  display: block;
 }
 .content .wr-load img {
   width: 200px;

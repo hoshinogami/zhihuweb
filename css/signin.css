@@ -118,6 +118,7 @@ a {
   font-size: 14px;
   border: none;
   outline: none;
+  width: 250px;
 }
 .main .sign .write .wr-item31,
 .main .sign .write .wr-item32 {
@@ -134,6 +135,7 @@ a {
   font-size: 14px;
   border: none;
   outline: none;
+  width: 280px;
 }
 .main .sign .write .wr-item31 span,
 .main .sign .write .wr-item32 span {

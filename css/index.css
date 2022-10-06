@@ -146,13 +146,13 @@ li {
 .main {
   width: 694px;
   float: left;
-  border: 1px solid #aaa5a5;
+  border: 1px solid #e6e6e6;
   height: 100%;
 }
 .main .main-tabs {
   position: relative;
   height: 60px;
-  border-bottom: 1px solid #aaa5a5;
+  border-bottom: 1px solid #e6e6e6;
 }
 .main .main-tabs li {
   display: block;
@@ -167,7 +167,7 @@ li {
 }
 .main-content .page {
   padding: 20px;
-  border-bottom: 1px solid #aaa5a5;
+  border-bottom: 1px solid #e6e6e6;
 }
 .main-content .page .page-title {
   font-size: 16px;
@@ -240,7 +240,7 @@ li {
 }
 .right-tab .creator {
   width: 274px;
-  border: 1px solid #aaa5a5;
+  border: 1px solid #e6e6e6;
   padding: 16px 15px 10px;
 }
 .right-tab .creator .hang1 {
@@ -311,7 +311,7 @@ li {
 .right-tab .recommend {
   margin-top: 10px;
   width: 274px;
-  border: 1px solid #aaa5a5;
+  border: 1px solid #e6e6e6;
   padding: 16px 15px 10px;
 }
 .right-tab .recommend .re-item1 {
@@ -366,7 +366,7 @@ li {
 .right-tab .labs {
   margin-top: 10px;
   width: 306px;
-  border: 1px solid #aaa5a5;
+  border: 1px solid #e6e6e6;
 }
 .right-tab .labs .labs-item1 {
   display: flex;
@@ -407,7 +407,7 @@ li {
 .right-tab .center {
   margin-top: 10px;
   width: 274px;
-  border: 1px solid #aaa5a5;
+  border: 1px solid #e6e6e6;
   padding: 16px 15px 10px;
   height: 320px;
 }
